@@ -1,0 +1,12 @@
+[Unit]
+Description=Мой PHP-скрипт
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/php /mnt/c/Users/Documents/practicecode/php-cli/les1/script.php >> /mnt/c/Users/Documents/log2.txt
+Restart=always
+RestartSec=60
+
+[Install]
+WantedBy=multi-user.target
